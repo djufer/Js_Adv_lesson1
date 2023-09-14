@@ -1,0 +1,40 @@
+<!-- <p>lesson01 works!</p>
+<hr>
+<h1>Hello, {{ name }}</h1>
+<hr>
+<h2>age is {{ age }}</h2>
+<hr>
+<h3>ONLINE: {{ status }}</h3>
+<hr>
+<h4>{{ arrNames[0]+', '+ arrNames[2] }}</h4>
+<hr>
+<h5>{{ person.firstName }} {{ person.lastName }} </h5>
+<hr>
+<h6>{{ showMyName() }}</h6>
+<hr>
+<hr> -->
+<!-- <a [href]="homePageUrl"> {{ homePgeName }}</a> -->
+<!-- <a [href]="homePageUrl" [textContent]="homePageName"></a> -->
+<!-- <button [class]="classes">Add</button> -->
+<!-- <button [class.btn]="isBtn"></button> -->
+<!-- <h1 [style.color]="isColor ? 'green' : 'red'">Some text</h1>
+<button (mouseover)="changeColor()">Change color</button> -->
+<!-- <input type="text" [(ngModel)]="userName">
+<p>Name: {{ userName }} </p>
+<button (click)="getName()">get</button> -->
+
+<div class="container">
+  <div class="badWords-block">
+    <span class="badWords-title">Bad words: </span>
+    <span id="badWords"> {{ badWords }}</span>
+  </div>
+  <div class="inpAndBtns">
+    <input type="text" [(ngModel)]="badWord"
+    id="inputWords"/>
+    <button id="addBtn" (click)="add()" >Add</button>
+    <button id="resetBtn" (click)="reset()">Reset</button>
+  </div>
+
+  <textarea id="textarea" [(ngModel)]="textAreaContent" > {{ textAreaContent }} </textarea>
+  <button id="btn-cenzor" (click)="cenzor()">Cenzor</button>
+</div>
